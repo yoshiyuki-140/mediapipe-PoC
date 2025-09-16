@@ -1,8 +1,9 @@
 import cv2
 
 # Webカメラの指定 (0は通常、内蔵カメラ)
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
+print("ESCキーで終了します。")
 while cap.isOpened():
     # カメラから1フレームずつ読み込む
     success, image = cap.read()
